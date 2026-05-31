@@ -1,37 +1,9 @@
 ---
 name: banking-operations
 description: Orchestrate banking operations across Plaid, Mono (Africa), and Open Banking — verify accounts, monitor transactions, check balances, initiate payments, and detect anomalies. Use when checking account balances, listing transactions, verifying bank connections, initiating payments, categorizing transactions, searching transaction history, or monitoring cash flow.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-banking server connected (Plaid, Mono, or Open Banking). Optional: mcp-finance for reconciliation, mcp-payments for payment orchestration, mcp-notifications for alerts.
-allowed-tools:
-  - list_accounts
-  - get_account
-  - get_balances
-  - list_transactions
-  - get_transaction
-  - search_transactions
-  - categorize_transaction
-  - sync_transactions
-  - get_identity
-  - list_institutions
-  - get_institution
-  - initiate_payment
-  - get_payment_status
-  - list_payments
-  - get_statement
-tags:
-  - business
-  - banking
-  - fintech
-  - transactions
-  - payments
-  - plaid
-  - mono
-references:
-  - references/tool-sequences.md
-  - references/cross-mcp-workflows.md
-  - references/examples.md
+allowed-tools: [list_accounts, get_account, get_balances, list_transactions, get_transaction, search_transactions, categorize_transaction, sync_transactions, get_identity, list_institutions, get_institution, initiate_payment, get_payment_status, list_payments, get_statement]
 metadata:
   author: Zavora AI
   mcp-server: mcp-banking
